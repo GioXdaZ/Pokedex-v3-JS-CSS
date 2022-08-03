@@ -1,0 +1,904 @@
+.background {
+  width: 100%;
+  background: linear-gradient(270deg, #f8d444, #e4bc40);
+}
+
+.navbar {
+  width: auto;
+  height: 80px;
+  background: black;
+  position: relative;
+}
+
+.pokedex {
+  display: flex;
+  margin: auto;
+  width: 900px;
+  height: 750px;
+  align-items: center;
+}
+.pokeBody {
+  display: flex;
+  position: absolute;
+  width: 450px;
+  height: 750px;
+  background: linear-gradient(rgb(182, 0, 0), rgb(161, 0, 0));
+  margin-top: 80px;
+  margin-left: 30px;
+  border: 1px solid black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.borderPokeTop {
+  display: flex;
+  width: 450px;
+  height: 150px;
+  background: black;
+  position: absolute;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 75px),
+    calc(100% - 170px) calc(100% - 75px),
+    calc(100% - 250px) 100%,
+    0 100%
+  );
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.pokeTop {
+  display: flex;
+  width: 450px;
+  height: 149px;
+  background: linear-gradient(rgb(200, 0, 0), rgb(255, 0, 0));
+  position: absolute;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 75px),
+    calc(100% - 170px) calc(100% - 75px),
+    calc(100% - 250px) 100%,
+    0 100%
+  );
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.borderHuge {
+  display: flex;
+  width: 119px;
+  height: 119px;
+  background: radial-gradient(rgb(163, 164, 159), rgb(122, 123, 119));
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+
+.pokeCircle.blue {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(
+    rgb(36, 212, 212),
+    rgb(15, 180, 180),
+    rgb(9, 114, 155)
+  );
+  border-radius: 100%;
+  position: absolute;
+  margin: 9px 9px;
+  border: 1px solid black;
+}
+
+.circleContainer {
+  display: flex;
+  margin-left: 135px;
+  width: 450px;
+  height: 150px;
+}
+
+.borderTiny {
+  display: flex;
+  width: 39px;
+  height: 39px;
+  background: radial-gradient(rgb(163, 164, 159), rgb(122, 123, 119));
+  border-radius: 100%;
+  position: relative;
+  margin: 10px 2px;
+  border: 1px solid black;
+}
+
+.pokeCircle.red {
+  display: flex;
+  width: 29px;
+  height: 29px;
+  background: radial-gradient(rgb(187, 0, 0), rgb(163, 0, 0), rgb(197, 0, 0));
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+  border: 1px solid black;
+}
+
+.pokeCircle.yellow {
+  display: flex;
+  width: 29px;
+  height: 29px;
+  background: radial-gradient(
+    rgb(190, 140, 2),
+    rgb(255, 166, 0),
+    rgb(208, 255, 0)
+  );
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+  border: 1px solid black;
+}
+
+.pokeCircle.green {
+  display: flex;
+  width: 29px;
+  height: 29px;
+  background: radial-gradient(rgb(15, 175, 0), rgb(15, 216, 58)),
+    rgb(30, 255, 0);
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+  border: 1px solid black;
+}
+
+.bodyScreen {
+  display: flex;
+  position: absolute;
+  width: 340px;
+  height: 620px;
+  background: linear-gradient(rgb(218, 0, 0), rgb(202, 0, 0));
+  clip-path: polygon(0 80px, 190px 80px, 270px 0, 100% 0, 100% 100%, 0 100%);
+  margin: 100px 25px 25px 25px;
+  border-bottom-left-radius: 10px;
+}
+
+.pokeBorderScreen {
+  display: flex;
+  flex-direction: column;
+  width: 299px;
+  height: 299px;
+  background: radial-gradient(rgb(56, 56, 56), rgb(223, 223, 223));
+  position: absolute;
+  top: 80px;
+  margin: 30px 20px;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid black;
+}
+
+.lightsTopScreen {
+  display: flex;
+  width: 80px;
+  height: 30px;
+  margin: auto;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  left: 6px;
+}
+
+.borderLights {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(rgb(210, 211, 209), rgb(122, 123, 119));
+  border-radius: 100%;
+  position: relative;
+  border: 1px solid black;
+}
+
+.lightRedTop {
+  display: flex;
+  width: 19px;
+  height: 19px;
+  background: radial-gradient(
+    rgb(255, 0, 0),
+    rgba(211, 11, 11, 0.836),
+    rgb(197, 0, 0)
+  );
+  border-radius: 100%;
+  position: relative;
+  margin: auto auto;
+  border: 1px solid black;
+}
+
+.pokeScreen {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 220px;
+  height: 200px;
+  background: #5a8ad3;
+  border-radius: 10px;
+}
+
+.imagePokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagePokemon img {
+  width: 220px;
+}
+.numberPokemon {
+  display: flex;
+  color: white;
+  margin-top: -55px;
+  margin-left: 10px;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.audioOutputContainer {
+  display: flex;
+  width: 100px;
+  height: 60px;
+  flex-direction: column;
+  margin-left: 185px;
+  margin-top: 4px;
+  gap: 3px;
+}
+
+.borderTinyScreen {
+  display: flex;
+  width: 49px;
+  height: 49px;
+  background: radial-gradient(rgb(210, 211, 209), rgb(122, 123, 119));
+  border-radius: 100%;
+  position: absolute;
+  margin: -30px 40px;
+  border: 1px solid black;
+  top: 270px;
+}
+
+.pokeLightError {
+  display: flex;
+  width: 39px;
+  height: 39px;
+  background: radial-gradient(
+    rgb(255, 0, 0),
+    rgba(236, 13, 13, 0.918),
+    rgb(197, 0, 0)
+  );
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+  border: 1px solid black;
+}
+
+.audioOutput {
+  display: flex;
+  width: 70px;
+  height: 4px;
+  border-radius: 5px;
+  background: black;
+  border: 3px solid rgb(192, 191, 191);
+}
+
+.pokeBottom {
+  display: flex;
+  width: 300px;
+  height: 180px;
+  position: relative;
+  margin-left: 45px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.positionLightsLarge {
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.stickLeft {
+  display: flex;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(70deg, rgb(19, 19, 19), black);
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -10px;
+  box-shadow: -2px 10px 20px 1px black;
+}
+
+.lightContainerTiny {
+  display: flex;
+  width: 40px;
+  height: 20px;
+  margin-top: 130px;
+  margin-left: -10px;
+  gap: 4px;
+  align-items: center;
+}
+
+.borderLightsTiny {
+  display: flex;
+  background: linear-gradient(30deg, silver, gray);
+  width: 11px;
+  height: 11px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.lightRedTiny {
+  display: flex;
+  background: radial-gradient(rgb(250, 46, 46), rgb(133, 0, 0));
+  width: 8px;
+  height: 8px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: auto auto;
+}
+
+.lightGreenTiny {
+  display: flex;
+  background: radial-gradient(rgb(70, 247, 34), rgb(49, 70, 0));
+  width: 8px;
+  height: 8px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: auto auto;
+}
+
+.pokePanelInfo {
+  display: flex;
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 25px;
+}
+
+.borderPanelInfo {
+  display: flex;
+  width: 150px;
+  height: 80px;
+  background: linear-gradient(35deg, silver, gray);
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.screenPanel {
+  display: flex;
+  width: 130px;
+  height: 70px;
+  background: linear-gradient(90deg, #124c0a, #18660e);
+  margin: auto auto;
+  border-radius: 4px;
+}
+
+.panelPokemonInfo {
+  display: flex;
+  width: 105px;
+  height: 65px;
+  flex-direction: column;
+  color: white;
+  font-family: monospace;
+  margin-left: 3px;
+}
+
+.namePokemon {
+  display: flex;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.heightPokemon {
+  display: flex;
+  margin: auto;
+  margin-left: 5px;
+}
+
+.weightPokemon {
+  display: flex;
+  margin: auto;
+  margin-left: 5px;
+}
+
+.arrow {
+  display: flex;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 180px;
+  border: 2px solid black;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.borderArrowPanel {
+  display: flex;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background: linear-gradient(45deg, red, darkred);
+  margin: auto;
+}
+
+.arrowPanel {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(70deg, rgb(0, 0, 0), rgb(3, 3, 3));
+  clip-path: polygon(
+    0 75px,
+    75px 75px,
+    75px 0,
+    calc(100% - 75px) 0,
+    calc(100% - 75px) 75px,
+    100% 75px,
+    100% calc(100% - 75px),
+    calc(100% - 75px) calc(100% - 75px),
+    calc(100% - 75px) 100%,
+    75px 100%,
+    75px calc(100% - 75px),
+    0 calc(100% - 75px)
+  );
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.decorationArrow {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(70deg, rgb(14, 14, 14), rgb(10, 10, 10));
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 100%;
+}
+
+.lightsBottomContainer {
+  display: flex;
+  width: 80px;
+  height: 20px;
+  margin-top: 175px;
+  margin-left: 182.5px;
+  gap: 6px;
+}
+
+.lightBottom {
+  display: flex;
+  background: linear-gradient(30deg, silver, gray);
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.green {
+  display: flex;
+  background: radial-gradient(rgb(70, 247, 34), rgb(49, 70, 0));
+  width: 8px;
+  height: 8px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: auto auto;
+}
+
+.yellow {
+  display: flex;
+  background: radial-gradient(rgb(215, 247, 34), rgb(70, 42, 0));
+  width: 8px;
+  height: 8px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: auto auto;
+}
+
+.pokeHinge {
+  display: flex;
+  flex-direction: column;
+  height: 677px;
+  width: 60px;
+  background: linear-gradient(rgb(218, 0, 0), rgb(202, 0, 0));
+  margin-top: 155px;
+  margin-left: 422px;
+  border: 1px solid;
+  gap: 500px;
+  position: absolute;
+}
+
+.pokeRings {
+  display: flex;
+  height: 40px;
+  width: 66px;
+  background: linear-gradient(rgb(180, 0, 0), rgb(209, 0, 0));
+  align-self: center;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+.lights {
+  display: flex;
+  width: 130px;
+  height: 20px;
+  position: absolute;
+  gap: 4px;
+}
+
+.borderLightsLarge {
+  display: flex;
+  width: 60px;
+  height: 10px;
+  background: linear-gradient(50deg, gray, white);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.lightGreen {
+  display: flex;
+  width: 56px;
+  height: 6px;
+  background: linear-gradient(180deg, green, darkgreen);
+  margin: auto auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.lightRed {
+  display: flex;
+  width: 56px;
+  height: 6px;
+  background: linear-gradient(180deg, red, darkred);
+  margin: auto auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.pokeCapBodyBorder {
+  display: flex;
+  width: 390px;
+  height: 677px;
+  background: black;
+  margin: 155px 0 0 482px;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 282px) 0,
+    calc(100% - 202px) 73px,
+    100% 73px,
+    100% 100%,
+    0 100%
+  );
+  border-bottom-right-radius: 25px;
+}
+
+.pokeCapBody {
+  display: flex;
+  width: 389px;
+  height: 675px;
+  background: #c62828;
+  position: absolute;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 281px) 0,
+    calc(100% - 201px) 73px,
+    100% 73px,
+    100% 100%,
+    0 100%
+  );
+  margin-top: 1px;
+  align-items: center;
+  border-bottom-right-radius: 25px;
+}
+
+.pokeCapBodyIn {
+  display: flex;
+  position: absolute;
+  width: 340px;
+  height: 620px;
+  background: darkred;
+  margin-left: 25px;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 281px) 0,
+    calc(100% - 196px) 75px,
+    100% 75px,
+    100% 100%,
+    0 100%
+  );
+  border-bottom-right-radius: 10px;
+}
+
+.pokeCapBorderScreen {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    45deg,
+    rgb(206, 203, 203),
+    rgb(109, 109, 109),
+    rgb(255, 255, 255)
+  );
+  margin-top: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.pokeCapScreen {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: linear-gradient(90deg, #124c0a, #18660e);
+  margin: auto;
+  border-radius: 5px;
+}
+
+.infoPokemonScreen {
+  display: flex;
+  width: 260px;
+  height: 110px;
+  color: white;
+  font-family: monospace;
+  text-align: justify;
+  margin: 2px 3px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.buttonsPanel {
+  display: flex;
+  flex-direction: column;
+  width: 263px;
+  height: 90px;
+  background: black;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 65px;
+  border-radius: 5px;
+}
+
+.pokeButtonPanelTop {
+  display: flex;
+  width: 260px;
+  height: 40px;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokeButtonPanelBottom {
+  display: flex;
+  width: 260px;
+  height: 40xp;
+  margin: 0 auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokeButtonPanel {
+  display: flex;
+  width: 50px;
+  height: 40px;
+}
+.aqua {
+  background: linear-gradient(26deg, aqua, skyblue);
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.buttonPanelBone {
+  display: flex;
+  width: 104px;
+  height: 44px;
+  background: black;
+  margin-top: 220px;
+  margin-left: 65px;
+  border-radius: 5px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.bone {
+  background: linear-gradient(26deg, rgb(247, 223, 158), rgb(151, 135, 63));
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.positionLightLargeCap {
+  display: flex;
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 200px;
+}
+
+.positionLightTinyCap {
+  display: flex;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -105px;
+}
+
+.lights {
+  display: flex;
+  width: 130px;
+  height: 20px;
+  position: absolute;
+  gap: 4px;
+}
+
+.borderLightsLarge {
+  display: flex;
+  width: 60px;
+  height: 10px;
+  background: linear-gradient(50deg, gray, white);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.lightGreen {
+  display: flex;
+  width: 56px;
+  height: 6px;
+  background: linear-gradient(180deg, green, darkgreen);
+  margin: auto auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.lightRed {
+  display: flex;
+  width: 56px;
+  height: 6px;
+  background: linear-gradient(180deg, red, darkred);
+  margin: auto auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.lightsCapBottonContainer {
+  display: flex;
+  width: 80px;
+  height: 20px;
+  margin-top: 175px;
+  margin-left: 182.5px;
+  gap: 6px;
+}
+
+.lightCapBottom {
+  display: flex;
+  background: linear-gradient(30deg, silver, gray);
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.greenLightCap {
+  display: flex;
+  background: radial-gradient(rgb(70, 247, 34), rgb(49, 70, 0));
+  width: 12px;
+  height: 12px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: auto auto;
+}
+
+.redLightCap {
+  display: flex;
+  background: radial-gradient(rgb(247, 34, 34), rgb(70, 0, 0));
+  width: 12px;
+  height: 12px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: auto auto;
+}
+
+.stickRightPanel {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin-top: 285px;
+  margin-left: 100px;
+}
+
+.stickRight {
+  display: flex;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(30deg, rgb(255, 230, 0), rgb(105, 62, 6));
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -10px;
+  box-shadow: -2px 10px 20px 1px black;
+}
+
+.typesPanelContainer {
+  display: flex;
+  width: 310px;
+  height: 75px;
+  position: absolute;
+  margin-top: 215px;
+  margin-left: -300px;
+  gap: 28px;
+  align-items: center;
+}
+
+.typesBorderPanels {
+  display: flex;
+  width: 140px;
+  height: 63px;
+  background: linear-gradient(50deg, silver, gray);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.typesScreenPanel {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  height: 53px;
+  background: black;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.type {
+  display: flex;
+  width: 120px;
+  height: 10px;
+  font-family: monospace;
+  margin: 8px auto;
+  align-items: center;
+  color: white;
+  font-size: 1.1rem;
+  justify-content: center;
+}
+
+.type-0 {
+  display: flex;
+  width: 120px;
+  height: 10px;
+  margin: auto;
+  align-items: center;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.type-1 {
+  display: flex;
+  width: 120px;
+  height: 10px;
+  margin: auto;
+  align-items: center;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
